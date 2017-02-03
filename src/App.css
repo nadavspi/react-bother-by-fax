@@ -1,0 +1,36 @@
+body {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 80em;
+  font-family: sans-serif;
+}
+
+.editor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 750px) {
+  .editor > * {
+    flex: 0 0 calc(50% - 80px);
+  }
+}
+
+form {
+  width: 30em;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
